@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MiniCalculator {
     public static void main(String[] args) {
         int arr[] ={};
-       int sum=0,temp=0,li=0;
+       int sum=0,temp=0,li=0,sum1=1;
        int n=0,count=0,max=0,min=0;
         System.out.println("Welcome to Mini Calculator\t"+"Here is our Menu Chose one of'em:");
         System.out.println("Menu\n"+"1=+,-,/,*\n"+"2=Max/Min\n"+"3=Sorrting\n"+"4=Avrg\n");
@@ -46,7 +46,7 @@ public class MiniCalculator {
                             arr[i]= scan.nextInt();
                         }
                         for (int j=0; j<arr.length; j++){
-                            sum/=arr[j];
+                            sum1/=arr[j];
                         }
                         System.out.println("Result:"+sum);
                     } else if(ch=='*'){
@@ -58,7 +58,7 @@ public class MiniCalculator {
                             arr[i]= scan.nextInt();
                         }
                         for (int j=0; j<arr.length; j++){
-                            sum*=arr[j];
+                            sum1*=arr[j];
                         }
                         System.out.println("Result:"+sum);
                     }
