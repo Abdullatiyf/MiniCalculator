@@ -38,29 +38,21 @@ public class MiniCalculator {
                         }
                         System.out.println("Result:"+sum);
                     }else if(ch=='/'){
-                        System.out.println("Enter how many enters you want:");
-                        int bound=scan.nextInt();
-                        arr= new int[bound];
-                        for (int i=0;i<arr.length;i++){
-                            System.out.println("Enter "+(i+1) +" value:");
-                            arr[i]= scan.nextInt();
-                        }
-                        for (int j=0; j<arr.length; j++){
-                            sum1/=arr[j];
-                        }
-                        System.out.println("Result:"+sum);
-                    } else if(ch=='*'){
-                        System.out.println("Enter how many enters you want:");
-                        int bound=scan.nextInt();
-                        arr= new int[bound];
-                        for (int i=0;i<arr.length;i++){
-                            System.out.println("Enter "+(i+1) +" value:");
-                            arr[i]= scan.nextInt();
-                        }
-                        for (int j=0; j<arr.length; j++){
-                            sum1*=arr[j];
-                        }
-                        System.out.println("Result:"+sum);
+                        System.out.println("Enter a value:");
+                            int a= scan.nextInt();
+                        System.out.println("Enter b value");
+                        int b= scan.nextInt();
+                        sum1=a/b;
+                        System.out.println("Result:"+sum1);
+                  
+                    }else if(ch=='*'){
+                        System.out.println("Enter a value:");
+                        int a= scan.nextInt();
+                        System.out.println("Enter b value");
+                        int b= scan.nextInt();
+                        sum1=a*b;
+                        System.out.println("Result:"+sum1);
+
                     }
                 break;
             }
